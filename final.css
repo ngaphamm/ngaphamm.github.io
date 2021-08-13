@@ -464,7 +464,6 @@ p,li
 }
 .section5 .title-num
 {
-	text-align: center;
 	justify-content: center;
 }
 .section5 h1
@@ -482,7 +481,7 @@ p,li
 	width: 100%
 }
 .img{
-	width: 33.333%;
+	width: 33%;
 	box-sizing: border-box;
 	padding: 10px;
 	transition: transform 0.5s
@@ -494,7 +493,7 @@ p,li
 }
 .img:hover
 {
-	transform: scale(1.05)
+	transform: scale(1.07)
 }
 
 
@@ -578,7 +577,6 @@ p,li
 .s3-img-style
 {	
 	height: 250px;
-	width: 100%;
 	background-size: cover;
 	background-position: center;	
 }
@@ -674,13 +672,13 @@ p,li
 { 
 	background: #CFC3C6;
 	color: #452D52;
-	font-weight00;
-	width: 30%;
+	width: 25%;
 	position: absolute;
-	right: -18%;
+	right: -10%;
 	text-align: center;
-	padding: 10px 20px;
+	padding: 10px 23px;
 	margin-top: 50px;
+
 }
 .s4-right h1
 {
@@ -947,13 +945,42 @@ p,li
 { 
 	flex:1
 }
+.footer-right
+{
+	flex:1
+}
 .footer-left2 h2
 {
 	margin: 20px 0
 }
-.footer-right
+.footer-left2
 {
-	flex:1
+	text-align: center
+}
+.social .fab
+{
+	width:40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #39313c ;
+	background: #e2dbd4;
+	margin-left: 10px;
+	border-radius: 50%
+}
+.footer-botom
+{
+	text-align: center;
+	margin-top: 70px;
+}
+.footer h2
+{
+	color: #BAABC9;
+	font-family: 'Poiret One', cursive;
+}
+.footer-left2 hr
+{
+	background: #e2dbd4;
 }
 .form-box
 {
@@ -974,18 +1001,17 @@ p,li
 	border-right: 0;
 	margin: 10px auto;
 	padding: 10px 0;
-	color:beige;
+	color: beige;
 	outline: none;
 }
 .contact
 {
-	margin-bottom: 5px;
 	font-size: 40px;
 }
 .btn
 {
 	width: 40%;
-	height: 35px;
+	height: 40px;
 	border: 1px solid rgba(188,74,197,0.5);
 	border-radius: 20px;
 	cursor: pointer;
@@ -993,35 +1019,5 @@ p,li
 	display: block;
 	margin: 25px auto 0 auto;
 	color: white
-}
-.footer-left2
-{
-	text-align: center
-}
-.social .fab
-{
-	width:40px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	font-size: 20px;
-	color: #39313c ;
-	background: #e2dbd4;
-	margin-left: 10px;
-	border-radius: 50%
-}
-.footer-botom
-{
-	text-align: center;
-	margin-top: 70px;
-}
-.footer h2
-{
-	color: #BAABC9;
-	font-family: 'Poiret One', cursive;
-}
-.left-2 hr
-{
-	background: #e2dbd4;
 }
 
