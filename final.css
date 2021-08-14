@@ -53,11 +53,6 @@ p,li
 	border-bottom: 2px solid #481B68
 }
 
-.border
-{
-
-
-}
 .border a{
 	border-radius: 20px;
 	padding: 10px 20px;
@@ -65,24 +60,21 @@ p,li
 	text-decoration: none;
 	position: relative;
 	transition: color 0.5s;
-	z-index: 1}
+	z-index: 1;
+ }
 .border a span{
 	width: 0%;
 	height: 100%;
-	background-color: #e2dbd4;
+	background-color: white;
 	position: absolute;
 	top:0;
 	left: 0;
 	transition: 0.5s;
 	z-index: -1;
-	border-radius: 20px;
+	border-radius: 30px;
 }
 .border a:hover span{	
 	width: 100%;}
-.border a:hover {	
-	color:#e2dbd4;
-
-}
 .cover-menu{
 	background: #CFC3C6
 }
