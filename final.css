@@ -58,7 +58,7 @@ p,li
 	border: 2px solid  #481B68;
 	text-decoration: none;
 	position: relative;
-	transition: color 0.5s;
+	transition: color 0.3s;
 	z-index: 1}
 .border a span{
 	width: 0%;
