@@ -52,11 +52,36 @@ p,li
 	color:#481B68;
 	border-bottom: 2px solid #481B68
 }
+
 .border
 {
-	border: 2px solid #3E2750;
-	background: #CFC3C6;
+
+
+}
+.border a{
 	border-radius: 20px;
+	padding: 10px 20px;
+	border: 2px solid  #481B68;
+	text-decoration: none;
+	position: relative;
+	transition: color 0.5s;
+	z-index: 1}
+.border a span{
+	width: 0%;
+	height: 100%;
+	background-color: #e2dbd4;
+	position: absolute;
+	top:0;
+	left: 0;
+	transition: 0.5s;
+	z-index: -1;
+	border-radius: 20px;
+}
+.border a:hover span{	
+	width: 100%;}
+.border a:hover {	
+	color:#e2dbd4;
+
 }
 .cover-menu{
 	background: #CFC3C6
