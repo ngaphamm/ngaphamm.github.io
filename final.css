@@ -88,13 +88,25 @@ p,li
 .cover-text
 {
 	margin-left: 10%;
+	animation: move .7s linear 1;
 }
-#coverimg
+.coverimg
 {
 	width: 600px;
 	position: absolute;
 	right: 12%;
 	bottom:2%;
+	animation: run .7s linear 1;
+}
+@keyframes run 
+{
+	from{transform: scale(0.5)}
+	to{transform: scale(1)}
+}
+@keyframes move
+{
+	from{transform: translateX(-500px)}
+	to{transform: translateX(0px)}
 }
 .cover-text
 {
@@ -633,7 +645,8 @@ p,li
 	align-items: center;
 	justify-content: center;
 	color: #e2dbd4;
-	border-radius: 20px
+	border-radius: 20px;
+	cursor: pointer
 }
 
 
@@ -694,7 +707,7 @@ p,li
 	text-align: center;
 	padding: 10px 23px;
 	margin-top: 50px;
-
+	cursor: pointer
 }
 .s4-right h1
 {
@@ -973,7 +986,7 @@ p,li
 {
 	text-align: center
 }
-.social .fab
+.social a .fab
 {
 	width:40px;
 	height: 40px;
@@ -981,8 +994,17 @@ p,li
 	font-size: 20px;
 	color: #39313c ;
 	background: #e2dbd4;
-	margin-left: 10px;
+	margin: 0 10px;
 	border-radius: 50%
+}
+.social a .fab:hover
+{
+	transform: translateY(8px);
+	box-shadow: 0 1px 20px rgba(188,74,197,0.5)
+}
+.social a .fab
+{
+	transition: transform 0.5s;
 }
 .footer-botom
 {
