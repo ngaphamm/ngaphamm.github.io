@@ -1,6 +1,10 @@
 *{margin:0;
 padding:0}
 
+html{
+	scroll-behavior: smooth;
+}
+
 h1{
 	font-family: 'Poiret One', cursive;;
 	font-size: 50px;
@@ -47,11 +51,7 @@ p,li
 	text-decoration: none;
 	color: #3E2750
 }
-.nav li a:hover
-{ 
-	color:#481B68;
-	border-bottom: 2px solid #481B68
-}
+
 .border a{
 	border-radius: 20px;
 	padding: 10px 20px;
@@ -88,7 +88,6 @@ p,li
 .cover-text
 {
 	margin-left: 10%;
-	animation: move .7s linear 1;
 }
 .coverimg
 {
@@ -96,17 +95,37 @@ p,li
 	position: absolute;
 	right: 12%;
 	bottom:2%;
-	animation: run .7s linear 1;
+	/*animation: run .5s linear 1;*/
+	animation: fadedown .8s forwards;
+	animation-delay: 1.5s;
+	opacity: 0
+}
+
+@keyframes rotate
+{
+	0%{transform: scale(0.5)}
+	100%{transform: scale(1)}
 }
 @keyframes run 
 {
-	from{transform: scale(0.5)}
-	to{transform: scale(1)}
+	0%{transform: scale(0.5)}
+	100%{transform: scale(1)}
 }
 @keyframes move
 {
-	from{transform: translateX(-500px)}
-	to{transform: translateX(0px)}
+	0%{transform: translateX(-500px)}
+	100%{transform: translateX(0px)}
+}
+@keyframes translateY
+{
+	0%{transform: translateY(-500px)}
+	100%{transform: translateY(0px)}
+}
+.shape,.section1 img{
+	animation: move 0.8s ease;
+}
+.s1-right{
+	animation: translateY 0.8s ease
 }
 .cover-text
 {
@@ -114,14 +133,57 @@ p,li
 }
 .cover-text h1
 { 
-	font-size: 80px
+	font-size: 80px;
+	animation: fadeup .5s forwards;
+	opacity: 0;
+	animation-delay: .5s
+}
+@keyframes fadeup{
+	0%{
+		transform:translateY(20px)
+	}
+	100%{
+		transform:translateY(0px);
+		opacity:1
+	}
+}
+@keyframes fadedown{
+	0%{
+		transform:translateY(-20px)
+	}
+	100%{
+		transform:translateY(0px);
+		opacity:1
+	}
+}
+@keyframes scale{
+	0%{
+		transform:scale(2)
+	}
+	100%{
+		transform:scale(1);
+		opacity:1
+	}
+}
+@keyframes grow{
+	0%{
+		width:0
+	}
+	100%{
+		width: 100%;
+		opacity:1
+	}
 }
 .cover-text p
 { 
 	margin-top: 20px;
 	font-style: italic;
-	font-size: 30px
+	font-size: 30px;
+	animation: scale .5s forwards;
+	opacity: 0;
+
 }
+
 .search
 { 
 	width: 70%;
@@ -130,7 +192,10 @@ p,li
 	padding: 10px 20px;;
 	border: 1.5px solid #39313c;
 	border-radius: 20px;
-	margin-top: 40px;
+	margin-top: 35px;
+	animation: grow 0.3s forwards;
+	animation-delay: 1s;
+	opacity:0
 }
 .search img
 { 
@@ -366,7 +431,8 @@ p,li
 	background-color: #CFC3C6;
 	flex-basis: 25%;
 	padding: 20px;
-	border-radius: 20px
+	border-radius: 20px;
+	box-shadow: -35px -35px 0px 5px #452D52;
 }
 .s2-center,.s2-right
 {	
